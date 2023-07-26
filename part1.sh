@@ -7,6 +7,6 @@ awk -F" " '{print $9}' $FILE | grep 200 | wc -l
 
 
 echo "List of HTTP response codes and their counts"
-awk -F" " '{print $12}' $FILE | sort | uniq -c
+awk -F" " '{print $9}' $FILE | sort | uniq -c
 
 exit 0
